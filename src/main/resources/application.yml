@@ -1,0 +1,22 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /customerservice
+
+spring:
+  datasource:
+     driver-class-name: org.postgresql.Driver
+     url: jdbc:postgresql://localhost:5432/dipali1
+     password: Talkhed@1996
+     username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+users:
+  url: http://localhost:8087/orderservice/getOrder/
